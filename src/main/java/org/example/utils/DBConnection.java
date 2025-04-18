@@ -24,7 +24,7 @@ public class DBConnection {
                     String password = prop.getProperty("db.password");
 
                     connection = DriverManager.getConnection(url, user, password);
-                    System.out.println("🔌 Connexion MySQL établie.");
+                    System.out.println("Connexion MySQL établie.");
                 }
             }
         } catch (Exception e) {
