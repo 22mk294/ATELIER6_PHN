@@ -17,7 +17,7 @@ public class Main {
 
         Utilisateur user = Authentification.seConnecter(email, mdp);
         if (user != null) {
-            System.out.println("✅ Bienvenue " + user.getNom());
+            System.out.println("Bienvenue " + user.getNom());
 
             // Vérification des retards
             EmpruntDAO.verifierEtSanctionnerRetards();
@@ -25,7 +25,7 @@ public class Main {
             // Navigation par rôle
             user.afficherMenu();
         } else {
-            System.out.println("❌ Connexion échouée.");
+            System.out.println("Connexion échouée.");
         }
     }
 }
